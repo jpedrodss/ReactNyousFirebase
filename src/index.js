@@ -11,6 +11,7 @@ import firebaseConfig from './utils/firebaseConfig'
 import Home from './pages/home'
 import Login from './pages/login';
 import Register from './pages/register';
+import EventosPage from './pages/eventos';
 
 const routing = (
   <Router>
@@ -18,6 +19,7 @@ const routing = (
       <FirebaseAppProvider firebaseConfig={firebaseConfig}>
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
+        <Route path="/eventos" component={EventosPage} />
       </FirebaseAppProvider>
     </Switch>
   </Router>
